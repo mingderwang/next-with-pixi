@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "next": "^6.1.1",
-    "pixi-sound": "^2.0.2",
     "pixi.js": "^4.8.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
