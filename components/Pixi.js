@@ -15,21 +15,25 @@ class PixiComponent extends React.Component {
   backgroundColor: 0x10bb99
 });
     this.gameCanvas.appendChild(this.app.view);
+// create a new Sprite from an image path
+var bunny = PIXI.Sprite.fromImage('static/images/cat.png')
 
-//load an image and run the `setup` function when it's done
-PIXI.loader
-  .add("images/cat.png")
-  .load(setup);
+// center the sprite's anchor point
+bunny.anchor.set(0.5);
 
-//This `setup` function will run when the image has loaded
-function setup() {
+// move the sprite to the center of the screen
+bunny.x = this.app.screen.width / 2;
+bunny.y = this.app.screen.height / 2;
 
-  //Create the cat sprite
-  let cat = new PIXI.Sprite(PIXI.loader.resources["static/images/cat.png"].texture);
+this.app.stage.addChild(bunny);
 
-  //Add the cat to the stage
-  app.stage.addChild(cat);
-}
+// Listen for animate update
+this.app.ticker.add(function(delta) {
+    // just for fun, let's rotate mr rabbit a little
+    // delta is 1 if running at 100% performance
+    // creates frame-independent transformation
+    bunny.rotation += 0.1 * delta;
+});
     this.app.start();
   }
   
