@@ -3017,10 +3017,6 @@ pixi-gl-core@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/pixi-gl-core/-/pixi-gl-core-1.1.4.tgz#8b4b5c433b31e419bc379dc565ce1b835a91b372"
 
-pixi-sound@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/pixi-sound/-/pixi-sound-2.0.2.tgz#3a48d72287b0a5ce2d20a240ec0d724a9f62c0a2"
-
 pixi.js@^4.8.1:
   version "4.8.1"
   resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-4.8.1.tgz#e35f370b0c635b5c542014d0649317d63d2ec7c4"
