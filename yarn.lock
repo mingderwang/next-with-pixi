@@ -584,6 +584,10 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@types/pixi.js@^4.5.3":
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/@types/pixi.js/-/pixi.js-4.8.0.tgz#961056751780046fe5da2166669a0f1e964a7b92"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -3717,6 +3721,12 @@ pinkie@^2.0.0:
 pixi-gl-core@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/pixi-gl-core/-/pixi-gl-core-1.1.4.tgz#8b4b5c433b31e419bc379dc565ce1b835a91b372"
+
+pixi-spine@^1.5.16:
+  version "1.5.16"
+  resolved "https://registry.yarnpkg.com/pixi-spine/-/pixi-spine-1.5.16.tgz#d024a603b815035be9f23fac480d4de32f159571"
+  dependencies:
+    "@types/pixi.js" "^4.5.3"
 
 pixi.js@^4.8.1:
   version "4.8.1"

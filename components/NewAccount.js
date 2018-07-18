@@ -2,6 +2,8 @@ import React from 'react';
 import Web3 from 'web3';
 
 class Web3console extends React.Component {
+    web3 = null;
+
     constructor() {
         super();
         this.state = {
@@ -14,16 +16,16 @@ class Web3console extends React.Component {
     }
 
     componentWillMount() {
-        console.log(web3)
-        var web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
+        web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
+        this.web3 = web3;
         var newAddress = web3.eth.accounts.create(web3.utils.randomHex(32));
         this.setState({ accounts: newAddress.address, privateKey: newAddress.privateKey });
         console.log(newAddress)
     }
 
     handleClick() {
-        var web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
-        var newAddress = web3.eth.accounts.create(web3.utils.randomHex(32));
+        console.log(this.web3)
+        var newAddress = this.web3.eth.accounts.create(this.web3.utils.randomHex(32));
         this.setState({ accounts: newAddress.address, privateKey: newAddress.privateKey });
     }
 
