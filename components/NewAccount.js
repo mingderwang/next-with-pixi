@@ -124,8 +124,8 @@ class Web3console extends React.Component {
       this.setState({
         no_web3: false
       });
-      //  subscription = sub(web3);
-      console.log("->", subscription);
+        subscription = sub(web3);
+      console.log("sub ->", subscription);
       //  subBlock(web3);
 
       web3.eth.getAccounts().then(
